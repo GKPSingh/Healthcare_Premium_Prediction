@@ -61,10 +61,19 @@ Hyperparameter tuning performed using RandomizedSearchCV
 
 Top predictors identified by the final model:
 
-Insurance plan type
-Age
-Medical risk score
-BMI category (especially obesity)
-Smoking status
-Demographic and regional variables contributed marginally.
+* Insurance plan type
+* Age
+* Medical risk score
+* BMI category (especially obesity)
+* Smoking status
+* Demographic and regional variables contributed marginally.
+
+## Error Analysis & Key Findings
+
+* While overall accuracy is strong, ~30% of records showed large percentage errors
+* Extreme errors are heavily concentrated among younger policyholders (≤ 25 years)
+
+* Nearly all very large errors (>50%) occur in this age group
+
+📌 Insight: A single global model struggles to capture pricing dynamics for young adults.
 
