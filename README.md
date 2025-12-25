@@ -38,3 +38,33 @@ The project follows a complete end-to-end data science workflow, including data 
 * Standardizing categorical labels (e.g., smoking status)
 * One-hot encoding of categorical variables
 * Feature scaling using MinMaxScaler
+
+## Exploratory Data Analysis (EDA)
+
+* Insights uncovered:
+* Premiums increase strongly with age, insurance plan, and medical risk
+* Income influences plan selection but not premium linearly
+* Most customers prefer Bronze plans
+* Younger customers (≤ 25) exhibit higher relative prediction errors
+* Demographic and regional features have limited impact on premiums
+
+## Modeling Approach
+
+Multiple regression models were evaluated:
+* Linear Regression
+* Ridge Regression	
+* XGBoost Regressor	
+XGBoost significantly outperformed linear models
+Hyperparameter tuning performed using RandomizedSearchCV
+
+## Feature Importance (XGBoost)
+
+Top predictors identified by the final model:
+
+Insurance plan type
+Age
+Medical risk score
+BMI category (especially obesity)
+Smoking status
+Demographic and regional variables contributed marginally.
+
