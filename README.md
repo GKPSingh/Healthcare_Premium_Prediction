@@ -77,3 +77,34 @@ Top predictors identified by the final model:
 
 📌 Insight: A single global model struggles to capture pricing dynamics for young adults.
 
+##  Segmentation Strategy
+
+To address this limitation, the dataset is segmented into:
+
+  * hpp_young → policyholders aged ≤ 25
+
+  * hpp_adult → policyholders aged > 25
+
+This targeted modeling approach is expected to:
+
+  * Reduce extreme percentage errors
+
+  * Improve predictive accuracy
+
+  * Provide age-specific pricing insights
+
+A separate notebook focuses on the premiums_rest (age > 25) dataset.
+
+## Tech Stack
+
+* Python
+* Pandas, NumPy
+* Matplotlib, Seaborn
+* Scikit-learn
+* XGBoost
+* Statsmodels
+
+## Conclusion
+
+This project demonstrates how combining robust preprocessing, feature engineering, model comparison, and error analysis leads to reliable, business-ready insurance pricing models.
+The findings highlight the importance of data segmentation when a single model fails to generalize across distinct customer groups.
